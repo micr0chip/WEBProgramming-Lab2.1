@@ -1,0 +1,35 @@
+<html>
+  <head>
+   <meta charset="utf-8">   
+    <link rel="stylesheet" href="css/script.css">
+   <title> Калькулятор вкладов </title>
+  </head>
+  <body>
+   <img class="pic_center" src="pictures/logo_BL.png" height="78" width="506"/>
+<form id="form">
+<center>
+<div class="select">
+  <select name="deposit-type" id="deposit-type">
+    <option value="" disabled selected hidden>Вид вклада</option>
+    <option value="replenishable">Пополняемый</option>
+    <option value="term">Срочный</option>
+  </select>
+</div>
+<div class="select">
+  <select id="deposit-terms" name="deposit-terms">
+        <option value="" disabled selected hidden>Срок вклада</option>
+  </select>
+<div class="input">
+  <input type="number" id="deposit-sum" min=1 placeholder="Сумма, руб"/>
+</div>
+<div class="input">
+  <button class="button" type="submit" id="submit"> Рассчитать </button>
+  <center>
+</div>
+</form>
+  <div class="calc-result-container">
+	 <p id="calc-result-text"></p>
+  </div>
+   <script src="js/script.js"></script>
+  </body>
+</html>
